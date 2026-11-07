@@ -1,0 +1,279 @@
+
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101114;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+
+.header {
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #080808;
+    border-bottom: 2px solid #c51f32;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #c51f32;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #c51f32;
+}
+
+/* Apresentação principal */
+
+
+.hero {
+    min-height: 550px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #202124;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #c51f32;
+    display: block;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-subtitle {
+    color: #c51f32;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    color: #cccccc;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+
+.btn {
+    display: inline-block;
+    background-color: #c51f32;
+    color: #ffffff;
+    padding: 13px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #991728;
+    transform: translateY(-3px);
+}
+
+/* Títulos das seções */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title p {
+    color: #c51f32;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+/* Serviços */
+
+.servicos {
+    padding: 80px 8%;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.servico-card {
+    background-color: #1c1d21;
+    padding: 35px;
+    border-bottom: 3px solid #c51f32;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.servico-card:hover {
+    transform: translateY(-5px);
+}
+
+.servico-card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.servico-card p {
+    color: #cccccc;
+}
+
+/* Sobre */
+
+.sobre {
+    padding: 80px 8%;
+    background-color: #18191c;
+    text-align: center;
+}
+
+.sobre-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.sobre-content p {
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* Contato */
+
+.contato {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contato > p {
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+/* Rodapé */
+
+.footer {
+    background-color: #080808;
+    border-top: 2px solid #c51f32;
+    padding: 25px 8%;
+    text-align: center;
+}
+
+.footer p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 8%;
+}
+
+    .hero-content {
+      max-width: 100%;
+    }
+
+   .hero-image {
+     width: 100%;
+     max-width: 500px;
+    }
+
+   .hero-image img {
+     height: 280px;
+    }
+}
